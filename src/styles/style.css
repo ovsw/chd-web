@@ -1,0 +1,220 @@
+/*
+
+This is the file where you can add your custom styles to change the look of the
+theme. But don't modify style-main.css file.
+
+*/
+
+/* Your custom css codes start here: */
+
+.rte_content p {
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.rte_content a {
+  color: #ff7e59;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.rte_content .align_left {
+  margin: 1rem 1rem 1rem 0;
+  float: left;
+}
+.rte_content .align_left:first-child {
+  margin-top: 0;
+}
+
+.rte_content .align_right {
+  margin: 1rem 0 1rem 1rem;
+  float: right;
+}
+
+@media (max-width: 460px) {
+  .rte_content .align_left,
+  .rte_content .align_right {
+    float: none;
+    margin: 1rem auto;
+    display: block;
+  }
+}
+
+.rte_content .align_center {
+  margin: 1rem auto;
+  display: block;
+  width: 100%;
+}
+
+.rte_content h2,
+.rte_content h3 {
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.rte_content h2,
+.rte_content h3,
+.rte_content h4,
+.rte_content h5 {
+  color: #0083cc !important;
+}
+
+.rte_content h2:first-child {
+  margin-top: 0;
+}
+
+.fluid-width-video-wrapper {
+  margin-bottom: 2rem;
+  clear: both;
+}
+
+.rte_content ul {
+  list-style-type: circle;
+  margin: 2rem;
+  margin-bottom: 1rem;
+}
+.rte_content ol {
+  list-style: decimal !important;
+  margin: 2rem;
+  margin-bottom: 1rem;
+}
+.rte_content ul li,
+.rte_content ol li {
+  margin-bottom: 0.7rem;
+}
+
+/* .rte_content h3 {
+  color: #FF7E59 !important;
+} */
+
+.entry-title {
+  font-size: 1.5rem;
+}
+
+.pagination li a {
+  float: none;
+  position: static;
+}
+.pagination li a:hover {
+  color: white;
+  background-color: rgb(67, 91, 161);
+}
+.MarkupPagerNavSeparator {
+  padding: 6px 12px;
+}
+
+.menuzord-brand img {
+  max-width: 300px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .menuzord-brand img {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  #about .owl-item {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  #about .owl-item img {
+    width: 50%;
+  }
+}
+
+.entry-content {
+  min-height: 340px;
+}
+
+.hero {
+  background-position: center center;
+  background-size: cover;
+  min-height: 600px;
+}
+
+.hero__heading {
+  text-align: center;
+  padding-top: 70px;
+  font-size: 40px;
+}
+
+.hero__heading h1 {
+  color: white!important;
+  font-size: 1rem; 
+  margin: 0 1rem;
+}
+@media screen and (max-width: 1130px) {
+  .hero__heading {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .hero {
+    min-height: 300px;
+  }
+  .hero__heading {
+    padding-top: 40px;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero__heading {
+    font-size: 16px;
+  }
+}
+.serviceFlexParent {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.serviceFlexItem {
+  width: 31.33%;
+  position: relative;
+  /* flex-basis: 31.33%; */
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+.serviceFlexParent.container:before,
+.serviceFlexParent.container:after,
+.serviceFlexParent.row:before,
+.serviceFlexParent.row:after {
+   content: normal; 
+}
+@media screen and (max-width: 980px) {
+  .serviceFlexItem {
+    flex-basis: 48%;
+  }
+}
+@media screen and (max-width: 660px) {
+  .serviceFlexItem {
+    flex-basis: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+
+.custom-header-icons li a {
+  height: 20px!important;
+  width: 20px!important;
+  line-height: 20px!important;
+}
+.header-topbar {
+  text-align: center;
+  background-color: #0068a3 !important;
+}
+.header-topbar p{
+  margin:0;
+  color: white;
+  font-weight: bold;
+
+}
+
+@media screen and (max-width:442px) {
+  .menuzord-brand img {
+    max-width: 234px!important;
+  } 
+}
