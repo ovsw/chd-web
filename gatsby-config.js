@@ -14,137 +14,185 @@ const isProd = process.env.NODE_ENV === 'production'
 module.exports = {
   siteMetadata: {
     siteUrl: config.siteUrl,
+    servicesNav: [
+      {
+        title: 'General',
+        items: [
+          {
+            title: 'Children’s Dentistry',
+            slug: '/childrens-dentistry/'
+          },
+          {
+            title: 'Cleaning',
+            slug: '/professional-dental-cleaning/'
+          },
+          {
+            title: 'Crowns',
+            slug: '/porcelain-crowns/'
+          },
+          {
+            title: 'Fillings',
+            slug: '/fillings/'
+          },
+          {
+            title: 'Inlays and Onlays',
+            slug: '/dental-inlays-and-onlays/'
+          },
+          {
+            title: 'Sensitive Teeth',
+            slug: '/sensitive-teeth/'
+          },
+          {
+            title: 'Gingivitis and Gum Disease',
+            slug: '/gingivitis-and-gum-disease/'
+          },
+          {
+            title: 'Emergency Dentist in Chandler',
+            slug: '/emergency-dentist-in-chandler/'
+          }
+        ]
+      },
+      {
+        title: 'Cosmetic Dentistry',
+        items: [
+          {
+            title: 'Invisalign',
+            slug: '/invisalign/'
+          },
+          {
+            title: 'Lumineers',
+            slug: '/lumineers/'
+          },
+          {
+            title: 'Teeth Whitening',
+            slug: '/teeth-whitening-info/'
+          }
+        ]
+      },
+      {
+        title: 'Dental Restorations',
+        items: [
+          {
+            title: 'Bridges',
+            slug: '/bridges/'
+          },
+          {
+            title: 'Dental Implants',
+            slug: '/dental-implants/'
+          }
+        ]
+      },
+      {
+        title: 'Specialty',
+        items: [
+          {
+            title: 'Dental Sedation',
+            slug: '/dental-sedation/'
+          },
+          {
+            title: 'Sleep Apnea / Snoring',
+            slug: '/sleep-apnea-snorring/'
+          },
+          {
+            title: 'TMJ / Jaw Pain',
+            slug: '/tmj-jaw-pain/'
+          },
+          {
+            title: 'Full & Partial Dentures',
+            slug: '/dentures/'
+          }
+        ]
+      }
+    ],
     siteNav: [
       {
-        title: 'My Story',
-        slug: '/my-story/',
+        title: 'Services',
+        slug: '#',
         children: []
       },
       {
-        title: 'Apply',
-        slug: '/apply/',
-        children: []
-      },
-      {
-        title: 'VA Home Loans',
+        title: 'About Us',
         slug: '#',
         children: [
           {
-            title: 'VA Loan Eligibility',
-            slug: '/va-loan-eligibility/'
+            title: 'Meet Dr. Andy',
+            slug: '/andrew-shumway-chandler-dentist/'
           },
           {
-            title: 'Obtaining a VA Home Loan',
-            slug: '/va-pre-loan-faq/'
+            title: 'Meet Dr. Joel',
+            slug: '/joel-shumway-chandler-dentist/'
           },
           {
-            title: 'After Closing: VA Home Loan FAQ',
-            slug: '/va-post-loan-faq/'
+            title: 'Meet Dr. Tyler',
+            slug: '/meet-dr-tyler/'
           },
           {
-            title: 'What is a VA Jumbo Loan',
-            slug: '/va-jumbo-loans/'
+            title: 'Our Team',
+            slug: '/our-dental-team/'
           },
           {
-            title: 'The VA Loan App – Free Mobile Tool',
-            slug: '/va-loan-app-free-mobile-tool/'
+            title: 'Our Office',
+            slug: '/our-office/'
+          },
+          {
+            title: 'Reviews',
+            slug: '/testimonials-reviews/'
+          },
+          {
+            title: 'ADA Compliance',
+            slug: '/ada-compliance/'
           }
         ]
       },
       {
-        title: 'Media',
-        slug: '/media/',
-        children: []
-      },
-      {
-        title: 'Loan Info',
+        title: 'Patient Info',
         slug: '#',
         children: [
           {
-            title: 'Am I Eligible for a VA Loan?',
-            slug: '/eligible-va-loan/'
+            title: 'Advanced Dental Technology',
+            slug: '/advanced-dental-technology/'
           },
           {
-            title: 'Bad Credit Rating',
-            slug: '/bad-credit-rating/'
+            title: 'Financial Options',
+            slug: '/financial-options/'
           },
           {
-            title: 'Can I Buy Land with VA Loan?',
-            slug: '/buy-land-va-loan/'
+            title: 'Patient Protection and Comfort',
+            slug: '/patient-protection-and-comfort/'
           },
           {
-            title: 'Home Improvements VA Loan Information',
-            slug: '/home-improvements-va-loan/'
+            title: 'Services Overview',
+            slug: '/services-overview/'
           },
           {
-            title: 'Can I Finance 2 Homes Using VA Loans?',
-            slug: '/finance-2-homes-using-va-loans/'
+            title: 'Medical History Form',
+            slug: '/medical-history-form/'
           },
           {
-            title: 'Loan Programs for Veterans',
-            slug: '/loan-programs/'
-          },
-          {
-            title: 'How Do VA Loan Rates Differ?',
-            slug: '/va-loan-rates-differ/'
-          },
-          {
-            title: 'Different Types of VA Loans',
-            slug: '/types-of-loans/'
-          },
-          {
-            title: 'VA Loan Checklist',
-            slug: '/loan-checklist/'
-          },
-          {
-            title: 'Refinancing a VA Loan',
-            slug: '/refinancing/'
-          },
-          {
-            title: 'VA Mortgage Terms: Glossary',
-            slug: '/mortgage-terms-glossary/'
+            title: 'Smile Assessment Form',
+            slug: '/smile-assessment-form/'
           }
         ]
       },
       {
-        title: 'Contact',
-        slug: '/contact-me/',
-        children: []
-      },
-      {
-        title: 'VA COE',
-        slug: '/va-certificate-of-eligibility/',
+        title: 'Directions',
+        slug: '/location-map-and-directions/',
         children: []
       },
       {
         title: 'Blog',
         slug: '/blog/',
-        children: [
-          {
-            title: 'Types of VA Loans',
-            slug: '/types-of-va-loans/'
-          },
-          {
-            title: 'Requirements',
-            slug: '/requirements/'
-          },
-          {
-            title: 'Benefits',
-            slug: '/benefits/'
-          },
-          {
-            title: 'Finances',
-            slug: '/finances/'
-          },
-          {
-            title: 'Tips',
-            slug: '/tips/'
-          },
-          {
-            title: 'Misc',
-            slug: '/misc/'
-          }
-        ]
+        children: []
+      },
+      {
+        title: 'Apopointments',
+        slug: '/schedule-an-appointment/',
+        children: []
+      },
+      {
+        title: 'Contact',
+        slug: '/contact-us/',
+        children: []
       }
     ]
   },

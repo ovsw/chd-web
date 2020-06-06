@@ -22,6 +22,7 @@ import '../styles/custom-bootstrap-margin-padding.css'
 
 import '../styles/responsive.css'
 import '../styles/style.css'
+import '../styles/colors/theme-skin-color-set6.css'
 
 const Layout = ({children, doHideNav, doShowNav, showNav, siteTitle}) => (
   <div id='wrapper' className='wrapper'>

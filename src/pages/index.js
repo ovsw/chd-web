@@ -12,6 +12,7 @@ import GraphQLErrorList from '../components/graphql-error-list'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Hero from '../components/hero'
+import HomeBoxes from '../components/home-boxes'
 import AboutArea from '../components/about-area'
 import Highlights from '../components/features-area'
 import ServicesArea from '../components/services-area'
@@ -97,6 +98,7 @@ const IndexPage = props => {
       />
 
       <Hero />
+      <HomeBoxes />
       {/* <AboutArea /> */}
       {/* <Highlights /> */}
       {/* <ServicesArea sectionTitle='How Do I Obtain a VA Home Loan?' sectionSubtitle='6 Simple Steps' cardsContent={obtainLoanCardsContent} /> */}

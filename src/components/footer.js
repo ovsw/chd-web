@@ -21,180 +21,120 @@ const Footer = () => {
 
   const backgroundFluidImageStack = [
     footerBg.childImageSharp.fluid,
-    `linear-gradient(rgba(3, 27, 56, 0.8), rgba(3, 27, 56, 0.8))`
+    'linear-gradient(rgba(3, 27, 56, 0.8), rgba(3, 27, 56, 0.8))'
   ].reverse()
 
   return (
-    <footer className='footer'>
-
-      { /* Footer Contact Area */}
-      <div className='footer-contact-area'>
-        <div className='container'>
-          <div className='footer-contact'>
-            {/* <div className='row'> */}
-            <p className='footer-contact-block' style={{marginBottom: '0'}}>I help veterans get VA Loans in Phoenix, Scottsdale, Tempe, Chandler, Gilbert, and other Phoenix metro cities.
-With an office in Phoenix AZ, I'm known nationwide as a top VA loan specialist. So wherever you live or want to buy a home, don't hesitate to contact me - I am here to serve YOU!</p>
-            {/* <div className='col'>
-              <div className='footer-contact-block'>
-                <span className='footer-contact-icon'>
-                  <i className='zmdi zmdi-phone' />
-                </span>
-                <p><a href='#'>+0884567863</a><br /><a href='#'>+0884567863</a></p>
+    <>
+      <footer id='footer' className='footer bg-black-111'>
+        <div className='container pt-70 pb-40'>
+          <div className='row border-bottom-black'>
+            <div className='col-sm-6 col-md-3'>
+              <div className='widget dark'>
+                <img className='mt-10 mb-20' alt='' src='/site/templates/images/logo-wide-white.png' />
+                <p>We are a general family dentist office that takes great pride in how we treat our patients and the excellence in dentistry we strive to achieve.</p>
+                <ul className='list-inline mt-5'>
+                  <li className='m-0 pl-10 pr-10'> <i className='fa fa-map-marker text-theme-colored mr-5' /> <a className='text-gray' href='https://goo.gl/maps/txA8kE6xEFT2' target='_blank'>3150 S Gilbert Rd #1 <br />Chandler, AZ 85286, USA</a> </li>
+                  <li className='m-0 pl-10 pr-10'> <i className='fa fa-phone text-theme-colored mr-5' /> <a className='text-gray' href='tel:480-659-7800'>480-659-7800</a> </li>
+                  <li className='m-0 pl-10 pr-10'> <i className='fa fa-fax text-theme-colored mr-5' /> <a className='text-gray' href='tel:480-820-5677'>480-820-5677</a> </li>
+                  <li className='m-0 pl-10 pr-10'> <i className='fa fa-globe text-theme-colored mr-5' /> <a className='text-gray' href='https://mychandlerdentists.com'>mychandlerdentists.com</a> </li>
+                </ul>
               </div>
+
             </div>
-            <div className='col'>
-              <div className='footer-contact-block'>
-                <span className='footer-contact-icon'>
-                  <i className='zmdi zmdi-home' />
-                </span>
-                <p>958 Lilyan Junction, Mitchellmouth, Rwanda</p>
+            <div className='col-sm-6 col-md-3'>
+              <div className='widget dark'>
+                <h5 className='widget-title line-bottom'>Useful Links</h5>
+                <ul className='list-border'>
+                  <li><a href='/'>Home</a></li>
+                  <li><a href='/contact-us/'>Contact</a></li>
+                  <li><a href='/location-map-and-directions/'>Map &amp; Directions</a></li>
+                  <li><a href='/privacy-policy/'>Disclaimer</a></li>
+                  <li><a href='/about-us/ada-compliance/'>ADA Compliance</a></li>
+                  <li><a href='/sitemap/'>Sitemap</a></li>
+
+                </ul>
               </div>
+
             </div>
-            <div className='col'>
-              <div className='footer-contact-block'>
-                <span className='footer-contact-icon'>
-                  <i className='zmdi zmdi-email' />
-                </span>
-                <p><a href='#'>info@example.com</a><br /><a href='#'>info2@example.com</a></p>
-              </div>
-            </div> */}
-            {/* </div> */}
-          </div>
-        </div>
-      </div>
-      { /* // Footer Contact Area */}
+            <div className='col-sm-6 col-md-3'>
+              {/* <div className='widget dark'>
+                <h5 className='widget-title line-bottom'>Latest Articles</h5>
+                <div className='latest-posts'>
+                  <article className='post media-post clearfix pb-0 mb-10'>
+                    <a href='/coronavirus/' className='post-thumb'><img alt='Coronavirus Safety Measures' src='/site/assets/files/2555/dental-tool-sterilization-autoclave.80x55.jpg' /></a>
+                    <div className='post-right'>
+                      <h5 className='post-title mt-0 mb-5'><a href='/coronavirus/'>Coronavirus Safety Measures</a></h5>
+                      <p className='post-date mb-0 font-12'>16 Mar</p>
+                    </div>
+                  </article>
+                  <article className='post media-post clearfix pb-0 mb-10'>
+                    <a href='/dental-care-tips-for-older-adults/' className='post-thumb'><img alt='Dental Care Tips for Older Adults' src='/site/assets/files/2554/senior-eating-apple.80x55.jpg' /></a>
+                    <div className='post-right'>
+                      <h5 className='post-title mt-0 mb-5'><a href='/dental-care-tips-for-older-adults/'>Dental Care Tips for Older Adults</a></h5>
+                      <p className='post-date mb-0 font-12'>14 Feb</p>
+                    </div>
+                  </article>
+                  <article className='post media-post clearfix pb-0 mb-10'>
+                    <a href='/can-popcorn-lead-to-aheart-infection/' className='post-thumb'><img alt='Can Popcorn Lead to a Heart Infection?' src='/site/assets/files/2553/salt-popcorn-in-a-basket-p4sv88q.80x55.jpg' /></a>
+                    <div className='post-right'>
+                      <h5 className='post-title mt-0 mb-5'><a href='/can-popcorn-lead-to-aheart-infection/'>Can Popcorn Lead to a Heart Infection?</a></h5>
+                      <p className='post-date mb-0 font-12'>24 Jan</p>
+                    </div>
+                  </article>
+                </div>
+              </div> */}
+            </div>
 
-      { /* Footer Inner */}
-      <BackgroundImage
-        Tag='div'
-        className='footer-inner'
-        fluid={backgroundFluidImageStack}
-        backgroundColor={`#163963`}
-      >
-        {/* <div className='' data-secondary-overlay='8'> */}
+            <div className='col-sm-6 col-md-3'>
+              <div className='widget dark'>
+                <h5 className='widget-title line-bottom'>Opening Hours</h5>
+                <div className='opening-hours'>
+                  <ul className='list-border'>
+                    <li className='clearfix'> <span> Mon:  </span>
+                      <div className='value pull-right flip'> 7:00 am - 3:00 pm </div>
+                    </li>
+                    <li className='clearfix'> <span>Tues - Wed :</span>
+                      <div className='value pull-right flip'> 8:00 am - 5:00 pm </div>
+                    </li>
+                    <li className='clearfix'> <span> Thurs: </span>
+                      <div className='value pull-right flip'> 7:00 am - 4:00 pm </div>
+                    </li>
+                    <li className='clearfix'> <span> Fri: </span>
+                      <div className='value pull-right flip'>  7:00 am - 3:00 pm </div>
+                    </li>
+                    <li className='clearfix'> <span> Sat - Sun : </span>
+                      <div className='value pull-right flip'> Closed </div>
+                    </li>
 
-        { /* Footer Widgets Area */}
-        <div className='footer-widgets-area section-padding-lg'>
-          <div className='container'>
-            <div className='row widgets footer-widgets'>
-
-              <div className='col-lg-4 col-md-6'>
-                <div className='single-widget widget-info'>
-                  <div className='logo'>
-                    <img src='/images/logo/GWBLogoTeamVERCELLINO-400.jpg' alt='GoldWater Bank Logo' />
-                  </div>
-                  <p>Goldwater Bank N.A. – Mortgage Division,<br /> NMLS #452955.</p>
-                  <p>5050 North 40th Street, Ste 260,<br /> Phoenix AZ 85018 <br />Phone: <a href='tel:602-908-5849'>602-908-5849</a> | Fax: 480-569-1363</p>
-                  <ul className='footer-socialicons'>
-                    <SocialLinks />
                   </ul>
                 </div>
               </div>
 
-              <div className='col-lg-8 col-md-6'>
-                <div className='single-widget widget-info'>
-                  <h6 className='h4' style={{color: 'white'}}>CIP Disclosure</h6>
-                  <p style={{fontSize: '0.8rem', lineHeight: '1.2rem'}}>
-                    Important Information about Procedures for Opening a New Account To help the government fight the funding of terrorism and money laundering activities, Federal law requires all financial institutions to obtain, verify, and record information that identifies each person who opens an account (e.g., establishes a formal relationship by means of a loan application) What this means for you: When you open an account, we will ask for your name, address, date of birth, and other information that will allow us to identify you. We may also ask to see your driver's license or other identifying documents.</p>
-                  <p>
-                    <a href='http://www.nmlsconsumeraccess.org/' style={{marginRight: '1rem'}} title='NML Consumer Access' rel='noopener noreferrer'>
-                      <img src='/images/logo/ico2.png' alt='NML Consumer Access Logo' />
-                    </a>
-                    <img src='/images/logo/equal-housing-lender-logo.png' alt='Equal Housing Lender Logo' title='Equal Housing Lender' />
-                  </p>
+            </div>
+          </div>
+        </div>
+        <div className='footer-bottom bg-black-222'>
+          <div className='container pt-10 pb-0'>
+            <div className='row'>
+              <div className='col-md-6 sm-text-center'>
+                <p className='font-13 text-black-777 m-0'>Copyright &copy; {new Date().getFullYear()} &copy; Shumway Dental Care. All Rights Reserved | Website by <a href='https://ovswebsites.com'>OVS Websites</a></p>
+              </div>
+              <div className='col-md-6 text-right flip sm-text-center'>
+                <div className='widget no-border m-0'>
+                  <ul className='styled-icons icon-dark icon-circled icon-sm'>
+                    <li><a href='https://www.facebook.com/mychandlerdentists'><i className='fa fa-facebook' /></a></li>
+                    <li><a href='https://www.twitter.com/ShumwayDental'><i className='fa fa-twitter' /></a></li>
+                    <li><a href='https://www.youtube.com/user/ShumwayDentalCare/featured'><i className='fa fa-youtube' /></a></li>
+                    <li><a href='http://plus.google.com/+Mychandlerdentists/posts'><i className='fa fa-google-plus' /></a></li>
+                  </ul>
                 </div>
               </div>
-
-              {/* <div className='col-lg-3 col-md-6'>
-              <div className='single-widget widget-info'>
-                <p>dsa </p>
-              </div>
-            </div> */}
-
-              {/* <div className='col-lg-2 col-md-6'>
-              <div className='single-widget widget-links'>
-                <h4 className='widget-title'>
-                  <span>Policy</span>
-                </h4>
-                <ul>
-                  <li><a href='#'>Term</a></li>
-                  <li><a href='#'>Licenses</a></li>
-                  <li><a href='#'>Fund</a></li>
-                  <li><a href='#'>Support</a></li>
-                  <li><a href='#'>Security</a></li>
-                </ul>
-              </div>
-            </div> */}
-
-              {/* <div className='col-lg-3 col-md-6'>
-              <div className='single-widget widget-latestblog'>
-                <h4 className='widget-title'>
-                  <span>Latest Blog</span>
-                </h4>
-                <ul>
-                  <li>
-                    <div className='widget-latestblog-image'>
-                      <a href='blog-details.html'>
-                        <img src='/images/blog/thumbnails/blog-thumbnail-1.png' alt='blog thumbnail' />
-                      </a>
-                    </div>
-                    <span>1st Janu, 2018</span>
-                    <h5><a href='blog-details.html'>Ipsam rerum nisi beatae et</a></h5>
-                  </li>
-                  <li>
-                    <div className='widget-latestblog-image'>
-                      <a href='blog-details.html'>
-                        <img src='/images/blog/thumbnails/blog-thumbnail-2.png' alt='blog thumbnail' />
-                      </a>
-                    </div>
-                    <span>1st Janu, 2018</span>
-                    <h5><a href='blog-details.html'>Ipsam rerum nisi beatae et</a></h5>
-                  </li>
-                </ul>
-              </div>
-            </div> */}
-
-              {/* <div className='col-lg-4 col-md-6'>
-              <div className='single-widget widget-newsletter'>
-                <h4 className='widget-title'>
-                  <span>Newsletter</span>
-                </h4>
-                <p>Lorem ipsum dolor sit amet, coadipisicint, sed do eiusmod tempor incididunt</p>
-                <form action='#' className='widget-newsletter-form'>
-                  <input type='text' placeholder='Your email...' />
-                  <button type='submit'><img src='/images/icons/paper-plane-white.png' alt='send' /></button>
-                </form>
-              </div>
-            </div> */}
-
             </div>
           </div>
         </div>
-        { /* // Footer Widgets Area */}
-
-        { /* Footer Copyright Area */}
-        <div className='footer-copyright-area'>
-          <div className='container'>
-            <div className='row align-items-center'>
-              <div className='col-lg-7 col-12'>
-                <p className='copyright-text'>&copy; {new Date().getFullYear()} &copy; <a href='#'>Jimmy Vercellino NMLS #184169</a>, All Rights Reserved <br /> Website by <a href='https://ovswebsites.com/' style={{color: 'red'}}>OvS Websites</a></p>
-              </div>
-              <div className='col-lg-5 col-12'>
-                <ul className='copyright-links'>
-                  <li><Link to='/ada-compliance/'>ADA Compliance</Link></li>
-                  <li><Link to='/terms-service-privacy-policy/'>TOC/Privacy Policy</Link></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        { /* // Footer Copyright Area */}
-
-      </BackgroundImage>
-      { /* // Footer Inner */}
-
-    </footer>
-
+      </footer>
+    </>
   )
 }
 
